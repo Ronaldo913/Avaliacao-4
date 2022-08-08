@@ -1,0 +1,51 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+  }
+  
+  /*.titulo{
+    width: 40%;
+    margin: auto;
+  }
+  
+  #titulo{
+    text-align: center;
+    color: white;
+  }
+  
+  /*img{
+    margin-left: 12%;
+    position: absolute;
+    width: 30px;
+    top: 2.5%;
+  }*/
+  
+  .navbar-brand{
+    color: #c6fbc6;
+    font-size:x-large;
+  }
+
+  .navbar-brand:hover{
+    color:#7d71ea;
+  }
+  
+  #tabela{
+    position: relative;
+    text-align: center;
+    margin: auto;
+    color:#c6fbc6;
+    background-color: #7d71ea;
+    border: 5px solid #7d71ea;
+    font-size: 2em;
+  }
+  
+  tr{
+    border:3px solid white;
+    margin: 3%;
+  }
+
+  td{
+    margin: 3%;
+    border:3px solid white;
+  }
