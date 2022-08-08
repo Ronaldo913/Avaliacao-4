@@ -1,51 +1,103 @@
-html, body {
-    height: 100%;
-    width: 100%;
-    background-color: white;
-  }
-  
-  /*.titulo{
-    width: 40%;
-    margin: auto;
-  }
-  
-  #titulo{
-    text-align: center;
-    color: white;
-  }
-  
-  /*img{
-    margin-left: 12%;
-    position: absolute;
-    width: 30px;
-    top: 2.5%;
-  }*/
-  
-  .navbar-brand{
-    color: #c6fbc6;
-    font-size:x-large;
-  }
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
 
-  .navbar-brand:hover{
-    color:#7d71ea;
-  }
-  
-  #tabela{
-    position: relative;
-    text-align: center;
-    margin: auto;
-    color:#c6fbc6;
-    background-color: #7d71ea;
-    border: 5px solid #7d71ea;
-    font-size: 2em;
-  }
-  
-  tr{
-    border:3px solid white;
-    margin: 3%;
-  }
+#container {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
 
-  td{
-    margin: 3%;
-    border:3px solid white;
-  }
+header {
+  display: flex;
+  background-color: white;
+  height: 4em;
+  margin-right: 3%;
+  margin-bottom: 1%;
+  margin-top: 0.3%;
+  border-bottom: solid rgb(209, 206, 206) 1px;
+  margin-left: 30px;
+
+  flex-grow: 0;
+  flex-basis: auto;
+}
+
+header nav h1 {
+  color: #c6fbc6;
+  font-size: x-large;
+  margin-left: 8px;
+  margin-bottom: 0;
+}
+
+header nav h1:hover {
+  color: #7d71ea;
+}
+
+main {
+  margin: 0 25px 0 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-top: 60px;
+  display: flex;
+  flex-grow: 1;
+  flex-basis: auto;
+  flex-wrap: wrap;
+
+  flex-grow: 1;
+  flex-basis: auto;
+  overflow: scroll;
+}
+
+main #column {
+  display: flex;
+  flex-direction: row;
+}
+
+main #coluna {
+  width: 20rem;
+  height: 98%;
+  margin-left: 10px;
+  border-radius: 8px;
+  background-color: #c6fbc6;
+}
+
+main #card_add {}
+
+main #cardadd {
+  width: 20rem;
+  height: 20%;
+  margin-left: 25px;
+  border-radius: 8px;
+  border: black 2px dashed;
+  background-color: rgb(224, 224, 224);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+main #cardadd:hover {
+  background-color: rgb(192, 190, 190);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 4px;
+  border-top: solid rgb(209, 206, 206) 1px;
+  margin-left: 30px;
+
+  flex-grow: 0;
+}
+
+footer p {
+  margin: 0;
+}
