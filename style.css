@@ -1,6 +1,5 @@
-html,
-body {
-  height: 100%;
+html,body {
+ 
   width: 100%;
   background-color: white;
   height: 100vh;
@@ -58,7 +57,7 @@ main #column {
   flex-direction: row;
 }
 
-main #coluna {
+main .coluna {
   width: 20rem;
   height: 98%;
   margin-left: 10px;
@@ -100,4 +99,25 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+#inputs{
+  height: 6%;
+}
+#input_name_card, #input_text_card{
+  position: relative;
+  width: 100%;
+}
+
+#criar-card{
+  background-color: #7d71eb;
+  border: 6px solid #7d71eb;
+  height: 28%;
+  width: 16%;
+}
+
+#criar-card, h4{
+  font-size: 90%;
+  color: white;
+  text-align: justify;
 }
