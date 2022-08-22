@@ -36,13 +36,13 @@ function coluna() {
 
 function criar() {
 
-  let titulo_card = getElementById('tituloadd').value;
+  let titulo_card = getElementById("tituloadd").value;
 
-  let text_card = getElementById('textadd').value;
+  let text_card = getElementById("textadd").value;
 
-  let title = getElementById('tituloadd');
+  let title = getElementById("tituloadd");
 
-  let textocard = getElementById('textadd');
+  let textocard = getElementById("textadd");
 
   var h1 = document.createElement("h1");
 
@@ -68,15 +68,15 @@ function createCard() {
 
   var card = document.createElement("div");
 
-  let tituloadd = document.createElement('input');
+  let tituloadd = document.createElement("input");
 
   tituloadd.setAttribute('id', 'tituloadd');
 
-  let textadd = document.createElement('input');
+  let textadd = document.createElement("input");
 
   textadd.setAttribute('id', 'textadd');
 
-  let criar = document.createElement('button');
+  let criar = document.createElement("button");
 
   criar.setAttribute('id', 'criar');
 
