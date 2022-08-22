@@ -32,7 +32,7 @@ function coluna() {
 }
 
 
-}
+
 
 function criar() {
 
