@@ -102,6 +102,34 @@ function createCard() {
   
 
 
+
+function criar() {
+
+  let titulo_card = getElementById('tituloadd').value;
+
+  let text_card = getElementById('textadd').value;
+
+  let title = getElementById('tituloadd');
+
+  let textocard = getElementById('textadd');
+
+  var h1 = document.createElement("h1");
+
+  var h1_2 = document.createElement("h1");
+
+  var textoh1 = document.createTextNode(titulo_card);
+
+  var textoh2 = document.createTextNode(text_card);
+
+  h1.appendChild(titulo_card);
+
+  h1_2.appendChild(text_card);
+
+  title.appendChild(h1);
+
+  textocard.appendChild(h1_2);
+
+}
   
 
 
