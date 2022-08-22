@@ -76,7 +76,7 @@ function createCard() {
 
   textadd.setAttribute('id', 'textadd');
 
-  let criar = document.createElement("button");
+  let criar = document.createElement('button');
 
   criar.setAttribute('id', 'criar');
 
