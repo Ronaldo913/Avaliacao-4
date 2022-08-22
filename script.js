@@ -6,13 +6,9 @@ function coluna() {
   let coluna = document.createElement("div");
   coluna.setAttribute('id', 'coluna');
   coluna.setAttribute('class', 'coluna');
-  //coluna.setAttribute('class', 'coluna');
 
-  
-  
   let div = document.getElementById("column");
   div.appendChild(coluna);
-
 
   var botao = document.createElement("button");
   var escrita = document.createTextNode("+ card");
@@ -26,131 +22,57 @@ function coluna() {
   botao.style.borderColor="#7d71eb";
   botao.style.margin="2%";
   botao.setAttribute('onclick', 'createCard()');
-  
   coluna.appendChild(botao);
-  
 }
 
-
-
-
 function criar() {
-
   let titulo_card = getElementById('tituloadd').value;
-
   let text_card = getElementById('textadd').value;
 
   let title = getElementById('tituloadd');
-
   let textocard = getElementById('textadd');
 
   var h1 = document.createElement("h1");
-
   var h1_2 = document.createElement("h1");
 
   var textoh1 = document.createTextNode(titulo_card);
-
   var textoh2 = document.createTextNode(text_card);
 
   h1.appendChild(titulo_card);
-
   h1_2.appendChild(text_card);
-
   title.appendChild(h1);
-
   textocard.appendChild(h1_2);
-
 }
 
 function createCard() {
+  
+  let card = document.createElement("div");
+  card.setAttribute('id', 'info');
 
-  let coluna = document.getElementById("coluna");
-
-  var card = document.createElement("div");
-
-  let tituloadd = document.createElement('input');
-
+  let tituloadd = document.createElement("input");
   tituloadd.setAttribute('id', 'tituloadd');
 
-  let textadd = document.createElement('input');
-
+  let textadd = document.createElement("input");
   textadd.setAttribute('id', 'textadd');
 
-  let criar = document.createElement('button');
-
+  let criar = document.createElement("button");
   criar.setAttribute('id', 'criar');
-
   criar.setAttribute('onclick', 'criar()');
 
+  card.appendChild(tituloadd);
+  card.appendChild(textadd);
+  card.appendChild(criar);
+
+  let coluna = document.getElementById("coluna");
+  coluna.appendChild(card);
+
   if (tituloadd = null) {
-
     alert('Você precisa colocar um titulo!!!!');
-
   }
-
   if (textadd = null) {
-
     alert('Você precisa colocar texto!!!!');
-
   }
-
-}
-
-
-
-  
-  
-
-
-
-function criar() {
-
-  let titulo_card = getElementById('tituloadd').value;
-
-  let text_card = getElementById('textadd').value;
-
-  let title = getElementById('tituloadd');
-
-  let textocard = getElementById('textadd');
-
-  var h1 = document.createElement("h1");
-
-  var h1_2 = document.createElement("h1");
-
-  var textoh1 = document.createTextNode(titulo_card);
-
-  var textoh2 = document.createTextNode(text_card);
-
-  h1.appendChild(titulo_card);
-
-  h1_2.appendChild(text_card);
-
-  title.appendChild(h1);
-
-  textocard.appendChild(h1_2);
-
-}
-  
-
-
-
-  
-
-  
-
-
-
-
-  
-
-
-  
-
-  
-
-function mudarId(){
-  return i++;
-}
+} 
 
 function cardadd() {
   
@@ -166,13 +88,14 @@ function cardadd() {
 
   let div = document.getElementById("card_add");
   div.appendChild(cardadd);
-
 }
 
 function add() {
   coluna();
 }
 
-//coluna();
-cardadd();
+function chamar(){
+  cardadd();
+}
 
+chamar();
