@@ -13,20 +13,6 @@ function coluna() {
   let div = document.getElementById("column");
   div.appendChild(coluna);
 
-  /*var b = document.createElement("button");
-  var escrita = document.createTextNode("card");
-  //--------- css do botão de criar card ------
-  b.appendChild(escrita);
-  b.style.height="6%";
-  b.style.backgroundColor="#7d71ea";
-  b.style.color="#c6fbc6";
-  b.style.fontSize="100%";
-  b.style.borderRadius="15%";
-  b.style.borderColor="#7d71eb";
-  b.style.margin="2%";
-  b.setAttribute("onclick", "criarCardDiferentesColunas()");
-   
-  coluna.appendChild(b);*/
 
   var botao = document.createElement("button");
   var escrita = document.createTextNode("+ card");
@@ -39,99 +25,75 @@ function coluna() {
   botao.style.borderRadius="15%";
   botao.style.borderColor="#7d71eb";
   botao.style.margin="2%";
-  botao.setAttribute("onclick", "criarCard()");
+  botao.setAttribute("onclick", "criar()");
   
   coluna.appendChild(botao);
   
 }
+function createCard() {
 
-function criarCard(){
   let coluna = document.getElementById("coluna");
-    coluna.setAttribute("id", 'coluna');
-    var card = document.createElement("div");
-    
-    var titulo = document.querySelector("#input_name_card");
-    var tituloCard = titulo.value;
-    var h1 = document.createElement("h1");
-    var textoh1 = document.createTextNode(tituloCard);
-    var titulo_card = document.createElement("div");
-    h1.appendChild(textoh1);
-  //-----------------pegando o texto para o card
-  
-  var texto = document.querySelector("#input_text_card");
-  var text_card = texto.value; 
-  //---------------- p/ exibir o texto do card
-  var texto_card = document.createElement("div");
-  var h1_2 = document.createElement("h1");
-  var texto2 = document.createTextNode(text_card);
-  h1_2.appendChild(texto2);
-  h1_2.style.fontSize="70%";
-  h1_2.style.backgroundColor="#7d71ea";
 
-  card.style.position="relative";  
-  card.style.backgroundColor="#7d71ea";
-  card.style.margin="2%";
-  card.style.border="4px";
-  card.style.borderRadius="28%";
+  var card = document.createElement("div");
 
-  titulo_card.style.backgroundColor="white";
-  titulo_card.style.fontSize="90%";
+  let tituloadd = document.createElement('input');
 
-  titulo_card.appendChild(h1);
-  coluna.appendChild(card);
-  card.appendChild(titulo_card);
-  texto_card.appendChild(h1_2);
-  card.appendChild(texto_card);
-    
-}
-  
-/*
-function criarCardDiferentesColunas(){ 
-    
-    let coluna = document.getElementById("coluna");
-    coluna.setAttribute("id", 'coluna'+mudarId());
-    var card = document.createElement("div");
-    
-    var titulo = document.querySelector("#input_name_card");
-    var tituloCard = titulo.value;
-    var titulo_card = document.createElement("div");
-    
-    var h1 = document.createElement("h1");
-    var textoh1 = document.createTextNode(tituloCard);
-    h1.appendChild(textoh1);
-    
+  tituloadd.setAttribute('id', 'tituloadd');
 
-  var texto = document.querySelector("#input_text_card");
-  var text_card = texto.value; 
+  let textadd = document.createElement('input');
 
-  var h1_2 = document.createElement("h1");
-  var textoh1_2 = document.createTextNode(text_card);
-  h1_2.appendChild(textoh1_2);
-  h1_2.style.fontSize="70%";
-  h1_2.style.backgroundColor="#7d71ea";
+  textadd.setAttribute('id', 'textadd');
 
-  card.style.position="relative";
-    
-      
-    
-    card.style.backgroundColor="#7d71ea";
-    card.style.height="10%";
-    card.style.margin="2%";
-  
-    titulo_card.style.backgroundColor="white";
-    titulo_card.style.fontSize="90%";
-      
-    coluna.appendChild(card);
-    card.appendChild(titulo_card);
-    card.appendChild(h1_2);
-    titulo_card.appendChild(h1);
-  
-  
-  
-  
+  let criar = document.createElement('button');
+
+  criar.setAttribute('id', 'criar');
+
+  criar.setAttribute('onclick', 'criar()');
+
+  if (tituloadd = null) {
+
+    alert('Você precisa colocar um titulo!!!!');
+
   }
 
-*/
+  if (textadd = null) {
+
+    alert('Você precisa colocar texto!!!!');
+
+  }
+
+}
+
+function criar() {
+
+  let titulo_card = getElementById('tituloadd').value;
+
+  let text_card = getElementById('textadd').value;
+
+  let title = getElementById('tituloadd');
+
+  let textocard = getElementById('textadd');
+
+  var h1 = document.createElement("h1");
+
+  var h1_2 = document.createElement("h1");
+
+  var textoh1 = document.createTextNode(titulo_card);
+
+  var textoh2 = document.createTextNode(text_card);
+
+  h1.appendChild(titulo_card);
+
+  h1_2.appendChild(text_card);
+
+  title.appendChild(h1);
+
+  textocard.appendChild(h1_2);
+
+}
+  
+
+
   
 
   
