@@ -68,11 +68,11 @@ function createCard() {
 
   var card = document.createElement("div");
 
-  let tituloadd = document.createElement("input");
+  let tituloadd = document.createElement('input');
 
   tituloadd.setAttribute('id', 'tituloadd');
 
-  let textadd = document.createElement("input");
+  let textadd = document.createElement('input');
 
   textadd.setAttribute('id', 'textadd');
 
