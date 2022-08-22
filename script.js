@@ -40,9 +40,9 @@ function criar() {
 
   let text_card = getElementById('textadd').value;
 
-  let title = getElementById("tituloadd");
+  let title = getElementById('tituloadd');
 
-  let textocard = getElementById("textadd");
+  let textocard = getElementById('textadd');
 
   var h1 = document.createElement("h1");
 
