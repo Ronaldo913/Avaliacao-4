@@ -25,7 +25,7 @@ function coluna() {
   botao.style.borderRadius="15%";
   botao.style.borderColor="#7d71eb";
   botao.style.margin="2%";
-  botao.setAttribute("onclick", "createCard()");
+  botao.setAttribute('onclick', 'createCard()');
   
   coluna.appendChild(botao);
   
