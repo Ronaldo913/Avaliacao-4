@@ -36,9 +36,9 @@ function coluna() {
 
 function criar() {
 
-  let titulo_card = getElementById("tituloadd").value;
+  let titulo_card = getElementById('tituloadd').value;
 
-  let text_card = getElementById("textadd").value;
+  let text_card = getElementById('textadd').value;
 
   let title = getElementById("tituloadd");
 
