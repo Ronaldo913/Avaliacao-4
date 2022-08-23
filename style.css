@@ -58,7 +58,7 @@ main #column {
   flex-direction: row;
 }
 
-main .coluna {
+main #coluna {
   width: 20rem;
   height: 98%;
   margin-left: 10px;
@@ -109,4 +109,11 @@ input {
   height: 50px;
   border-radius: 10px;
   border: none;
+  background-color: #7d71ea;
+  
+  border-color: "#7d71eb";
+}
+
+#criar:hover {
+  background-color: #5147ac;
 }

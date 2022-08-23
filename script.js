@@ -3,13 +3,13 @@ var i = 0;
 let textad = '';
 let tituload = '';
 
-
 function coluna() {
 
-
   let coluna = document.createElement("div");
+
+  coluna.setAttribute('class', '');
   coluna.setAttribute('id', 'coluna');
-  coluna.setAttribute('class', 'coluna');
+  
 
   let div = document.getElementById("column");
   div.appendChild(coluna);
@@ -28,7 +28,6 @@ function coluna() {
   botao.setAttribute('onclick', 'createCard()');
   coluna.appendChild(botao);
 }
-
 
 function createCard() {
 
@@ -68,7 +67,6 @@ function createCard() {
   criar.style.marginTop = '10px';
   textadd.style.marginTop = '10px';
 
-
 }
 
 function criar() {
@@ -92,7 +90,7 @@ function criar() {
   }
 
   var h1 = document.createElement("h1");
-  var h1_2 = document.createElement("h1");
+  var h1_2 = document.createElement("h3");
 
 
   var textoh1 = document.createTextNode(titulo_card);
@@ -101,16 +99,17 @@ function criar() {
   h1.appendChild(textoh1);
   h1_2.appendChild(textoh2);
 
-  document.getElementById('coluna').appendChild("div");
+  // document.getElementById('coluna').appendChild("div");
 
-  document.getElementById('cardadd').appendChild(h1);
-  document.getElementById('cardadd').appendChild(h1_2);
+  document.getElementById('coluna').appendChild(h1);
+  document.getElementById('coluna').appendChild(h1_2);
 
 
   h1.style.display = 'block';
-
-
 }
+
+let aux = 0;
+
 function cardadd() {
 
   let cardadd = document.createElement("div");
@@ -129,6 +128,7 @@ function cardadd() {
 }
 
 function add() {
+  aux++;
   coluna();
 }
 
