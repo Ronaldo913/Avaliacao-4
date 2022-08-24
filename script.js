@@ -194,8 +194,6 @@ function criar(id) {
       div.appendChild(h1);
       div.appendChild(h1_2);
   
-      alert(id);
-      
       document.getElementById(id).appendChild(div);
       // document.getElementById('coluna').appendChild(h1_2);
       
@@ -208,7 +206,6 @@ function criar(id) {
 }
 
 function deletC(id){
-  alert(id);
   let div = document.getElementById(id);
   div.remove();
   alert("Card Excluído!");
