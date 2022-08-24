@@ -58,7 +58,7 @@ main #column {
   flex-direction: row;
 }
 
-main #coluna {
+main .coluna {
   width: 20rem;
   height: 98%;
   margin-left: 10px;
@@ -66,13 +66,18 @@ main #coluna {
   background-color: #c6fbc6;
 }
 
+main .coluna:hover {
+  background-color: #c0f0c0;
+}
+
 main #cardadd {
   width: 20rem;
   height: 20%;
   margin-left: 25px;
   border-radius: 8px;
-  border: black 2px dashed;
-  background-color: rgb(224, 224, 224);
+  border: #8179ca  2px dashed;
+  background-color: #b1a9fa;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,7 +85,7 @@ main #cardadd {
 }
 
 main #cardadd:hover {
-  background-color: rgb(192, 190, 190);
+  background-color: #9a92e0;
 }
 
 footer {
@@ -104,14 +109,49 @@ input {
   width: 150px;
 }
 
-#criar {
-  width: 90px;
-  height: 50px;
+.divCard {
+  background-color: #7d71ea;
+  color: #c6fbc6;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.divCard:hover {
+  background-color: #776be2;
+}
+
+.divCard h3{
+  border-bottom: #c6fbc6 solid 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  margin: 8px;
+  padding: 10px;
+  border-radius: 10px;
+  background-Color: #c8c4f0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.info input {
+  border-radius: 5px;
+  border: 0.2px solid black;
+  width: 200px;
+}
+
+.info #criar {
+  width: 85px;
+  height: 45px;
   border-radius: 10px;
   border: none;
   background-color: #7d71ea;
-  
-  border-color: "#7d71eb";
+  border-color: #7d71eb;
+  justify-content: center;
 }
 
 #criar:hover {
